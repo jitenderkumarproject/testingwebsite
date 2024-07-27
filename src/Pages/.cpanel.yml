@@ -1,4 +1,5 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/futurlxp/testing.futurefinger.com/
+    - export DEPLOYPATH=/home2/futurlxp/testing.futurefinger.com
     - /bin/cp * $DEPLOYPATH
