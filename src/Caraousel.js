@@ -49,6 +49,7 @@ function Caraousel() {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+
     );
 }
 
