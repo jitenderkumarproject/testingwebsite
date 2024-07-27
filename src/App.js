@@ -12,6 +12,7 @@ import OurServicesTwo from './OurServicesTwo';
 import FluidHome from './FluidHome';
 import HomeH1 from './HomeH1';
 import HomeProgressBar from './ProgressBar';
+import HomeAccordian from './HomeAccordian';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <FluidHome />
       <OurServicesTwo />
       <HomeProgressBar />
+      <HomeAccordian />
       <Footer />
     </div>
   );
