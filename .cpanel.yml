@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-find build -maxdepth 1 -exec cp {} $DEPLOYPATH \;
-
-
