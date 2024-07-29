@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -r build/* $DEPLOYPATH
+    - /bin/cp -r build/* $DEPLOYPATH=/home2/futurlxp/testing.futurefinger.com
 
 
 
