@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PrivacyPolicy() {
+function LeadForm() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function PrivacyPolicy() {
   )
 }
 
-export default PrivacyPolicy
+export default LeadForm
