@@ -1,7 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -r build/* $DEPLOYPATH=/home2/futurlxp/testing.futurefinger.com
-
+find build -maxdepth 1 -exec cp {} $DEPLOYPATH \;
 
 
