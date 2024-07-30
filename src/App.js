@@ -11,6 +11,7 @@ import HeaderMarquee from './HeaderMarquee';
 import Login from './Dashboard/Login';
 import GoogleMap from './Pages/GoogleMap';
 
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +24,7 @@ function App() {
         <Route path="/Contact" element ={<ContactUs />}></Route>
         <Route path="*" element ={<PageNotFound />}> </Route>
         <Route path="/Login" element ={<Login />}> </Route>
-        <Route path="/GoogleMap" element ={<GoogleMap />}> </Route>
+       
       </Routes>
       <Footer />
       

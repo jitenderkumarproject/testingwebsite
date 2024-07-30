@@ -1,5 +1,4 @@
 import CookieConsent from "react-cookie-consent";
-
 import React from 'react'
 
 function CoockieConsent() {
