@@ -9,6 +9,7 @@ import FluidHome from '../FluidHome';
 import HomeH1 from '../HomeH1';
 import HomeProgressBar from '../ProgressBar';
 import HomeAccordian from '../HomeAccordian';
+import CoockieConsent from '../CoockieConsent';
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       <OurServicesTwo />
       <HomeProgressBar />
       <HomeAccordian /> 
+      <CoockieConsent />
       </>
   )
 }

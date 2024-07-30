@@ -27,7 +27,7 @@ $conn = mysqli_connect($host, $user, $password, $db);
     mysqli_close($conn);
 
 function fetchData($conn){
-    $sql = "SELECT UserName, UserPwd FROM LoginCheck  ;";
+    $sql = "SELECT 1 FROM LoginCheck WHERE UserName = 'admin' LIMIT 1;";
     $result = mysqli_query($conn, $sql);
     $data = array();
     while($row = mysqli_fetch_assoc($result)){
