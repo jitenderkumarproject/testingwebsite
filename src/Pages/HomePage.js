@@ -10,6 +10,8 @@ import HomeH1 from '../HomeH1';
 import HomeProgressBar from '../ProgressBar';
 import HomeAccordian from '../HomeAccordian';
 import CoockieConsent from '../CoockieConsent';
+import OffCanvas from '../OffCanvas';
+import VideoEmbeed from './VideoEmbeed';
 
 function HomePage() {
   return (
@@ -21,8 +23,10 @@ function HomePage() {
       <OurServices />
       <FluidHome />
       <OurServicesTwo />
+      <OffCanvas />
       <HomeProgressBar />
       <HomeAccordian /> 
+      <VideoEmbeed />
       <CoockieConsent />
       </>
   )

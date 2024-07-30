@@ -1,7 +1,8 @@
 import React from 'react'
 import GoogleMap from './GoogleMap'
-import ContactForm from '../LeadForm'
+// import ContactForm from '../LeadForm'
 import Breadcumbs from '../Breadcumbs'
+import ContactForm from './ContactForm'
 
 function ContactUs() {
   return (
