@@ -8,6 +8,7 @@ import AboutUs from './Pages/AboutUs';
 import PageNotFound from './Pages/PageNotFound';
 import HomePage from './Pages/HomePage';
 import HeaderMarquee from './HeaderMarquee';
+import Login from './Dashboard/Login';
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
         <Route path="/About" element = {<AboutUs />}></Route>
         <Route path="/Contact" element ={<ContactUs />}></Route>
         <Route path="*" element ={<PageNotFound />}> </Route>
-      
+        <Route path="/Login" element ={<Login />}> </Route>
       </Routes>
       <Footer />
+      
+       
+      
     </div>
   );
 }
