@@ -11,6 +11,9 @@ import HeaderMarquee from './HeaderMarquee';
 import Login from './Dashboard/Login';
 import GoogleMap from './Pages/GoogleMap';
 import { StyleRoot } from 'radium';
+import Career from './Pages/Career';
+import Blog from './Pages/Blog';
+import Faqs from './Pages/Faqs';
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/About" element={<AboutUs />}></Route>
+        <Route path="/Career" element={<Career />}></Route>
+        <Route path="/Faq" element={<Faqs/>}></Route>
+        <Route path="/Blog" element={<Blog />}></Route>
         <Route path="/Contact" element={<ContactUs />}></Route>
         <Route path="*" element={<PageNotFound />}> </Route>
         <Route path="/Login" element={<Login />}> </Route>

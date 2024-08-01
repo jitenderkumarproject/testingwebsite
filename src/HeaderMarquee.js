@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 function HeaderMarquee() {
     return (
-        <Marquee>
+        <Marquee style={{ backgroundColor: 'lightblue', padding: '10px' }}>
             I can be a React component, multiple React components, or just some text.
         </Marquee>
     )

@@ -4,12 +4,21 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" bg="primary" data-bs-theme="dark">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#">
+                <img
+                    width="50px"
+                    height="50px"
+                    className="d-block w-100"
+                    src="assests/logo/demologo.png"
+                    alt="Third slide"
+                />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -17,9 +26,9 @@ function Header() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Link</Nav.Link>
-                        <NavDropdown title="Link" id="navbarScrollingDropdown">
+                        <Nav.Link as={Link} to="/" rel="noopener noreferrer">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <NavDropdown title="Services" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
                                 Another action
@@ -29,8 +38,13 @@ function Header() {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#" disabled>
-                            Link
+                        <Nav.Link href="#">Hosting </Nav.Link>
+                        <Nav.Link href="#">Products </Nav.Link>
+                        <Nav.Link Link as={Link} to="/Career">Career </Nav.Link>
+                        <Nav.Link Link as={Link} to="/Faq">Faq </Nav.Link>
+                        <Nav.Link Link as={Link} to="/Blog">Blog </Nav.Link>
+                        <Nav.Link as={Link} to="/Contact">
+                            Contact
                         </Nav.Link>
                     </Nav>
                     <Form className="d-flex">

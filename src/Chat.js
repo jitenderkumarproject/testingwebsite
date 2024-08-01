@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Faq() {
+function Chat() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Faq() {
   )
 }
 
-export default Faq
+export default Chat
