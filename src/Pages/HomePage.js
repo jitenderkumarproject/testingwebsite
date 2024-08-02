@@ -20,38 +20,40 @@ import FeaturedCard2 from '../FeaturedCard2';
 import ImageCap from '../ImageCap';
 import Cards from '../Cards';
 import Borders from '../Borders';
-import GridCards from '../GridCards';
 import Spinner1 from '../Spinner1';
 import AnimatedComponent from '../AnimationTest';
 import Test from '../AnimationTest2';
-
+import HomeIntro1 from '../HomeIntro1';
 
 function HomePage() {
   return (
     <>
       <Caraousel />
-      <HomeH1 />
-      <Test /> 
-      <AnimatedComponent /> 
-       <IntroductionMain />
-      <Introduction />
+      <FeaturedCard2 />
+      <HomeIntro1 />
       <OurServices />
-      <FluidHome />
+       <IntroductionMain />
+      
+     
       <OurServicesTwo />
-      <OffCanvas />
+      
       <ImageCap />
       <HomeProgressBar />
       <HomeAccordian /> 
       <PageListGroup />
+      <OffCanvas />
       <Team />
       <VideoEmbeed />
-      <GridCards />
-      <FeaturedCard2 />
       <Spinner1 />
       <Borders />
       <QuoteCard />
       <Cards />
       <Featured />
+      <Introduction />
+      
+      <HomeH1 />
+      <Test /> 
+      <AnimatedComponent /> 
       <CoockieConsent />
 
       </>

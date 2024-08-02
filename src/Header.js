@@ -38,11 +38,31 @@ function Header() {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">Hosting </Nav.Link>
-                        <Nav.Link href="#">Products </Nav.Link>
+                        <NavDropdown title="Services" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action4">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action5">
+                                Something else here
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown title="Services" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action4">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action5">
+                                Something else here
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        {/* <Nav.Link href="#">Hosting </Nav.Link>
+                        <Nav.Link href="#">Products </Nav.Link> */}
                         <Nav.Link Link as={Link} to="/Career">Career </Nav.Link>
                         <Nav.Link Link as={Link} to="/Faq">Faq </Nav.Link>
-                        <Nav.Link Link as={Link} to="/Blog">Blog </Nav.Link>
+                        {/* <Nav.Link Link as={Link} to="/Blog">Blog </Nav.Link> */}
                         <Nav.Link as={Link} to="/Contact">
                             Contact
                         </Nav.Link>

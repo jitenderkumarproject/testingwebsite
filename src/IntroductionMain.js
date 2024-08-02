@@ -3,8 +3,8 @@ import { Card } from 'react-bootstrap'
 
 function IntroductionMain() {
   return (
-    <Card className="bg-dark text-white">
-    <Card.Img src="assests/images/2.png" alt="Card image" />
+    <Card className="bg-dark text-white" >
+    <Card.Img src="assests/images/banner.jpg" alt="Card image" />
     <Card.ImgOverlay>
       <Card.Title>Card title</Card.Title>
       <Card.Text>

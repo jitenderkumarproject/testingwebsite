@@ -1,0 +1,18 @@
+/* Testing CSS defining and class name and it properties */
+
+.h1primary{
+    color: rgb(192, 136, 33);
+    text-align: center;
+}
+
+/* making all the sub alements with Parent element  */
+
+/* div h1 {
+    color:orange;
+    text-align: center;
+} */
+
+/* div {
+    text-align : center;
+} */
+ /* ----------------------------------------- */
