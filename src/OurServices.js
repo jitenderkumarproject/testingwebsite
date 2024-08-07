@@ -1,9 +1,10 @@
 import React from 'react'
 import { Card, CardGroup } from 'react-bootstrap'
+import './CSS/cardgroup.scss'
 
 function OurServices() {
   return (
-    <CardGroup>
+    <CardGroup className='card-group'>
       <Card>
         <Card.Img variant="top" src="holder.js/100px160" />
         <Card.Body>

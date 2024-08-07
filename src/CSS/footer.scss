@@ -1,0 +1,105 @@
+// Define color variables
+$primary-color: #2e8b57; // Sea Green
+$secondary-color: #004d00; // Dark Green
+$button-hover-color: #3cb371; // Medium Sea Green
+$text-color: #ffffff; // White
+
+// General footer styling
+.mdb-footer {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 2rem 0;
+
+  // Container styling
+  .mdb-container {
+    padding: 0 2rem;
+  }
+
+  // Social media buttons
+  .mdb-btn {
+    border-color: $text-color;
+    color: $text-color;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+      color: $secondary-color;
+    }
+  }
+
+  // Social media icons
+  .mdb-icon {
+    font-size: 1.5rem;
+  }
+
+  // Newsletter section
+  .newsletter-section {
+    .mdb-input {
+      border-color: $text-color;
+      color: $text-color;
+      background-color: transparent;
+      &::placeholder {
+        color: $text-color;
+      }
+    }
+
+    .mdb-btn {
+      border-color: $text-color;
+      color: $text-color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $button-hover-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  // Footer links
+  .list-unstyled {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: $text-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $button-hover-color;
+        }
+      }
+    }
+  }
+
+  // Copyright section
+  .footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    color: $text-color;
+    a {
+      color: $text-color;
+      text-decoration: none;
+      &:hover {
+        color: $button-hover-color;
+      }
+    }
+  }
+
+  // Animation for footer
+  @keyframes footerAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Apply animation
+  .text-center {
+    animation: footerAnimation 1s ease-in-out;
+  }
+}

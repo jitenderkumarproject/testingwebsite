@@ -1,9 +1,10 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap';
+import './CSS/caraousal.scss'
 
 function Caraousel() {
     return (
-        <Carousel>
+        <Carousel className='carousel'>
             <Carousel.Item>
                 <h5>First slide label</h5>
                 <img

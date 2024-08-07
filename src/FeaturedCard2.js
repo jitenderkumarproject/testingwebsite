@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './CSS/testing.scss'
 
 function FeaturedCard2() {
   return (
-    <Card className="text-center">
+    <Card className="StyleTest">
     <Card.Header>Featured</Card.Header>
     <Card.Body>
       <Card.Title>Special title treatment</Card.Title>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Carousel } from 'react-bootstrap';
 import Caraousel from '../Caraousel';
 import Introduction from '../Introduction';
@@ -24,22 +24,33 @@ import Spinner1 from '../Spinner1';
 import AnimatedComponent from '../AnimationTest';
 import Test from '../AnimationTest2';
 import HomeIntro1 from '../HomeIntro1';
+import Header from '../Header';
+import Footer from '../Footer';
+import HeaderMarquee from '../HeaderMarquee'
+import $ from "jquery";
 
 function HomePage() {
+
+
+  const showLoader = () => {
+    // alert("aa");
+    $(".loader").show();
+  }
+
   return (
     <>
+      <button onClick={showLoader}>clik</button>
+      <HeaderMarquee />
+      <Header />
       <Caraousel />
       <FeaturedCard2 />
       <HomeIntro1 />
       <OurServices />
-       <IntroductionMain />
-      
-     
+      <IntroductionMain />
       <OurServicesTwo />
-      
       <ImageCap />
       <HomeProgressBar />
-      <HomeAccordian /> 
+      <HomeAccordian />
       <PageListGroup />
       <OffCanvas />
       <Team />
@@ -50,13 +61,13 @@ function HomePage() {
       <Cards />
       <Featured />
       <Introduction />
-      
-      <HomeH1 />
-      <Test /> 
-      <AnimatedComponent /> 
-      <CoockieConsent />
 
-      </>
+      <HomeH1 />
+      <Test />
+      <AnimatedComponent />
+      <CoockieConsent />
+      <Footer />
+    </>
   )
 }
 

@@ -1,0 +1,36 @@
+
+.StyleTest{
+
+    .custom-card {
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      
+      .custom-card .card-img {
+        filter: brightness(60%);
+      }
+      
+      .custom-card .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      
+      .custom-card .card-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      .custom-card .card-text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .custom-card .card-text:last-of-type {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+}
+

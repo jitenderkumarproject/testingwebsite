@@ -1,10 +1,11 @@
 import React from 'react'
 import { Card, Col, Container, Image, Row } from 'react-bootstrap'
+import './CSS/homeintro2.scss'
 
 function HomeIntro1() {
   return (
 
-    <Container>
+    <Container className='container'>
       <Row>
         <Col>
         <Card>

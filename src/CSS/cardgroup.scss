@@ -1,0 +1,63 @@
+// CardGroup.scss
+
+// Define color variables
+$card-border-color: #ddd;
+$card-bg-color: #fff;
+$card-shadow-color: rgba(0, 0, 0, 0.1);
+$card-hover-shadow-color: rgba(0, 0, 0, 0.2);
+$card-footer-bg-color: #f8f9fa;
+$text-muted-color: #6c757d;
+$transition-speed: 0.3s;
+
+// CardGroup Styling
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; // Space between cards
+
+  .card {
+    border: 1px solid $card-border-color;
+    border-radius: 8px; // Rounded corners
+    background-color: $card-bg-color;
+    box-shadow: 0 4px 8px $card-shadow-color; // Subtle shadow
+    transition: box-shadow $transition-speed ease, transform $transition-speed ease; // Smooth transitions
+
+    &:hover {
+      box-shadow: 0 8px 16px $card-hover-shadow-color; // Enhanced shadow on hover
+      transform: translateY(-5px); // Slight lift effect on hover
+    }
+
+    .card-img-top {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .card-body {
+      padding: 1.5rem; // Add padding to card body
+
+      .card-title {
+        font-size: 1.5rem; // Larger title font size
+        font-weight: bold; // Bold title
+        margin-bottom: 0.75rem; // Margin below title
+        color: #333; // Dark color for title
+      }
+
+      .card-text {
+        font-size: 1rem; // Standard font size for text
+        color: #666; // Slightly dark text color for readability
+        line-height: 1.5; // Improve readability with line height
+      }
+    }
+
+    .card-footer {
+      background-color: $card-footer-bg-color; // Background color for footer
+      border-top: 1px solid $card-border-color; // Border at the top of the footer
+      padding: 0.75rem; // Padding inside the footer
+      text-align: right; // Right-align footer text
+
+      .text-muted {
+        color: $text-muted-color; // Color for muted text
+      }
+    }
+  }
+}
