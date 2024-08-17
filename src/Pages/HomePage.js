@@ -28,6 +28,9 @@ import Header from '../Header';
 import Footer from '../Footer';
 import HeaderMarquee from '../HeaderMarquee'
 import $ from "jquery";
+import StripLine from '../mc/StripLine';
+import Figmatest from '../figmatest';
+import { MetaTags } from "react-meta-tags";
 
 function HomePage() {
 
@@ -39,11 +42,20 @@ function HomePage() {
 
   return (
     <>
-      <button onClick={showLoader}>clik</button>
+      {/* <button onClick={showLoader}>clik</button> */}
+      <MetaTags>
+        <title>Get Zenith Forex Card, Buy & Sell Foreign Currency, Transfer Money Abroad Online</title>
+        <meta name="description" content="Get Forex Card or Transfer Money Abroad Online from India. Zenith Forex is India's largets foreign exchange marketplace that allows easy currency exchange, IndusInd forex cards, international remittances, and travel insurance etc." />
+        <meta name="keywords" content="buy & sell foreign currency, get forex card, transfer money abroad online, India's largest foreign exchange marketplace, zero margin forex rates, money transfer service, online currency exchange, best foreign exchange" />
+      </MetaTags>
+
       <HeaderMarquee />
+      <StripLine />
       <Header />
+      <StripLine />
       <Caraousel />
-      <FeaturedCard2 />
+      {/* <Figmatest /> */}
+      {/* <FeaturedCard2 />
       <HomeIntro1 />
       <OurServices />
       <IntroductionMain />
@@ -65,7 +77,7 @@ function HomePage() {
       <HomeH1 />
       <Test />
       <AnimatedComponent />
-      <CoockieConsent />
+      <CoockieConsent /> */}
       <Footer />
     </>
   )

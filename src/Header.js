@@ -1,60 +1,34 @@
 import React, { useState } from 'react';
-import {
-  MDBNavbar,
-  MDBContainer,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBNavbarBrand,
-  MDBCollapse
-} from 'mdb-react-ui-kit';
+import { Nav } from 'react-bootstrap';
+import './mcss/navbar.css'
 
 export default function Header() {
-  const [openNavColor, setOpenNavColor] = useState(false);
-  const [openNavColorSecond, setOpenNavColorSecond] = useState(false);
-  const [openNavColorThird, setOpenNavColorThird] = useState(false);
 
   return (
     <>
-     
 
-      
-
-      <MDBNavbar expand='lg' light style={{ backgroundColor: '#e3f2fd' }}>
-        <MDBContainer fluid>
-          <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
-          <MDBNavbarToggler
-            type='button'
-            data-target='#navbarColor02'
-            aria-controls='navbarColor02'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-            onClick={() => setOpenNavColorThird(!openNavColorThird)}
-          >
-            <MDBIcon icon='bars' fas />
-          </MDBNavbarToggler>
-          <MDBCollapse open={openNavColorThird} navbar>
-            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              <MDBNavbarItem className='active'>
-                <MDBNavbarLink aria-current='page' href='#'>
-                  Home
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>About</MDBNavbarLink>
-              </MDBNavbarItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }

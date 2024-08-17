@@ -1,10 +1,11 @@
 {
   "name": "interactivewebsite",
-  "homepage": "https://testing.futurefinger.com/",
+  "homepage": "",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@beantech-designs/contact-form": "^2.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@nextui-org/breadcrumbs": "^2.0.12",
     "@react-spring/web": "^9.7.4",
     "@testing-library/jest-dom": "^5.17.0",

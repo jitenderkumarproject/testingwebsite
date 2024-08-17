@@ -6,7 +6,7 @@ import './CSS/testing.scss'
 function FeaturedCard2() {
   return (
     <Card className="StyleTest">
-    <Card.Header>Featured</Card.Header>
+    <Card.Header></Card.Header>
     <Card.Body>
       <Card.Title>Special title treatment</Card.Title>
       <Card.Text>
